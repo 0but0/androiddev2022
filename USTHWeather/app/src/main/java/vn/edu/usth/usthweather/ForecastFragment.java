@@ -63,33 +63,34 @@ public class ForecastFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        LinearLayout.LayoutParams lparams = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT,LinearLayout.LayoutParams.MATCH_PARENT,1f);
-        LinearLayout layout = new LinearLayout(getActivity());
-        layout.setBackgroundColor(Color.parseColor("#20FF0000"));
-        layout.setOrientation(LinearLayout.VERTICAL);
-        layout.setLayoutParams(lparams);
+        return inflater.inflate(R.layout.fragment_forecast, container, false);
+//        LinearLayout.LayoutParams lparams = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT,LinearLayout.LayoutParams.MATCH_PARENT,1f);
+//        LinearLayout layout = new LinearLayout(getActivity());
+//        layout.setBackgroundColor(Color.parseColor("#20FF0000"));
+//        layout.setOrientation(LinearLayout.VERTICAL);
+//        layout.setLayoutParams(lparams);
 
-        TextView thursday = new TextView(getActivity());
-        thursday.setLayoutParams(lparams);
-        thursday.setText("Thursday");
-        layout.addView(thursday);
+//        TextView thursday = new TextView(getActivity());
+//        thursday.setLayoutParams(lparams);
+//        thursday.setText("Thursday");
+//        layout.addView(thursday);
+//
+//        ImageView ThursdayWeather = new ImageView(getActivity());
+//        ThursdayWeather.setLayoutParams(lparams);
+//        ThursdayWeather.setImageResource(R.drawable.weather_icon1);
+//        layout.addView(ThursdayWeather);
+//
+//        TextView friday = new TextView(getActivity());
+//        friday.setLayoutParams(lparams);
+//        friday.setText("Friday");
+//        layout.addView(friday);
+//
+//        ImageView FridayWeather = new ImageView(getActivity());
+//        FridayWeather.setLayoutParams(lparams);
+//        FridayWeather.setImageResource(R.drawable.weather_icon2);
+//        layout.addView(FridayWeather);
 
-        ImageView ThursdayWeather = new ImageView(getActivity());
-        ThursdayWeather.setLayoutParams(lparams);
-        ThursdayWeather.setImageResource(R.drawable.weather_icon1);
-        layout.addView(ThursdayWeather);
-
-        TextView friday = new TextView(getActivity());
-        friday.setLayoutParams(lparams);
-        friday.setText("Friday");
-        layout.addView(friday);
-
-        ImageView FridayWeather = new ImageView(getActivity());
-        FridayWeather.setLayoutParams(lparams);
-        FridayWeather.setImageResource(R.drawable.weather_icon2);
-        layout.addView(FridayWeather);
-
-        return layout;
+//        return layout;
 
     }
 }

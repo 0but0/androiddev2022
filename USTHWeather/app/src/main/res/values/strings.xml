@@ -1,5 +1,24 @@
 <resources>
     <string name="app_name">USTH Weather</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Monday">Mon</string>
+    <string name="MonWea">Partly Cloudy \n24&#8451; - 31&#8451;</string>
+
+    <string name="Tuesday">Tue</string>
+    <string name="TueWea">Foggy and Humid \n18&#8451; - 20&#8451;</string>
+
+    <string name="Wednesday">Wed</string>
+    <string name="WedWea">Heavy rain \n15&#8451; - 17&#8451;</string>
+
+    <string name="Thursday">Thu</string>
+    <string name="ThuWea">Heavy rain \n5&#8451; - 10&#8451;</string>
+
+    <string name="Friday">Fri</string>
+    <string name="FriWea">Snow \n-3&#8451; - 3&#8451;</string>
+
+    <string name="Saturday">Sat</string>
+    <string name="SatWea">Thunder storm \n10&#8451; - 15&#8451;</string>
+
+    <string name="Sunday">Sun</string>
+    <string name="SunWea">Foggy and Humid \n15&#8451; - 18&#8451;</string>
 </resources>
