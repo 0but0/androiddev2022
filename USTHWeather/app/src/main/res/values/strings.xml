@@ -21,4 +21,7 @@
 
     <string name="Sunday">Sun</string>
     <string name="SunWea">Foggy and Humid \n15&#8451; - 18&#8451;</string>
+
+    <string name="Paris">Paris</string>
+    <string name="PaWea">15&#8451; \nCloudy</string>
 </resources>
