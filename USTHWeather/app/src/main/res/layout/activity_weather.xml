@@ -20,17 +20,21 @@
 <!--        app:layout_constraintTop_toTopOf="parent"-->
 <!--        app:layout_constraintVertical_bias="0.165">-->
 <!--    </FrameLayout>-->
-    <fragment
+<!--    <fragment-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_weight="1"-->
+<!--        android:id="@+id/weather"-->
+<!--        android:name="vn.edu.usth.usthweather.WeatherFragment"/>-->
+<!--    <fragment-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_weight="1"-->
+<!--        android:id="@+id/forcecast"-->
+<!--        android:name="vn.edu.usth.usthweather.ForecastFragment"/>-->
+    <androidx.viewpager2.widget.ViewPager2
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:id="@+id/weather"
-        android:name="vn.edu.usth.usthweather.WeatherFragment"/>
-    <fragment
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:id="@+id/forcecast"
-        android:name="vn.edu.usth.usthweather.ForecastFragment"/>
+        android:id="@+id/view_pager"/>
 
 </LinearLayout>

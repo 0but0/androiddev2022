@@ -4,161 +4,161 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#00F7FF"
     android:id="@+id/forcecast"
+    android:weightSum="7"
     tools:context=".ForecastFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:orientation="horizontal"
         android:gravity="center_vertical"
         android:layout_weight="1">
         <TextView
             android:layout_width="50dp"
-            android:layout_height="40dp"
+            android:layout_height="match_parent"
             android:text="@string/Monday"
             android:gravity="center"/>
         <ImageView
             android:layout_width="100dp"
-            android:layout_height="40dp"
+            android:layout_height="match_parent"
             android:contentDescription="@string/MonWea"
             android:src="@drawable/weather_icon1"/>
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="40dp"
+            android:layout_height="match_parent"
             android:text="@string/MonWea"
             android:gravity="center_vertical"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:orientation="horizontal"
         android:gravity="center_vertical"
         android:layout_weight="1">
         <TextView
             android:layout_width="50dp"
-            android:layout_height="40dp"
+            android:layout_height="match_parent"
             android:text="@string/Tuesday"
             android:gravity="center"/>
         <ImageView
             android:layout_width="100dp"
-            android:layout_height="40dp"
+            android:layout_height="match_parent"
             android:contentDescription="@string/TueWea"
             android:src="@drawable/weather_icon2"/>
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="40dp"
+            android:layout_height="match_parent"
             android:text="@string/TueWea"
             android:gravity="center_vertical"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:orientation="horizontal"
         android:gravity="center_vertical"
         android:layout_weight="1">
         <TextView
             android:layout_width="50dp"
-            android:layout_height="40dp"
+            android:layout_height="match_parent"
             android:text="@string/Wednesday"
             android:gravity="center"/>
         <ImageView
             android:layout_width="100dp"
-            android:layout_height="40dp"
+            android:layout_height="match_parent"
             android:contentDescription="@string/WedWea"
             android:src="@drawable/weather_icon3"/>
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="40dp"
+            android:layout_height="match_parent"
             android:text="@string/WedWea"
             android:gravity="center_vertical"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:orientation="horizontal"
         android:gravity="center_vertical"
         android:layout_weight="1">
         <TextView
             android:layout_width="50dp"
-            android:layout_height="40dp"
+            android:layout_height="match_parent"
             android:text="@string/Thursday"
             android:gravity="center"/>
         <ImageView
             android:layout_width="100dp"
-            android:layout_height="40dp"
+            android:layout_height="match_parent"
             android:contentDescription="@string/ThuWea"
             android:src="@drawable/weather_icon3"/>
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="40dp"
+            android:layout_height="match_parent"
             android:text="@string/ThuWea"
             android:gravity="center_vertical"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:orientation="horizontal"
         android:gravity="center_vertical"
         android:layout_weight="1">
         <TextView
             android:layout_width="50dp"
-            android:layout_height="40dp"
+            android:layout_height="match_parent"
             android:text="@string/Friday"
             android:gravity="center"/>
         <ImageView
             android:layout_width="100dp"
-            android:layout_height="40dp"
+            android:layout_height="match_parent"
             android:contentDescription="@string/FriWea"
             android:src="@drawable/weather_icon4"/>
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="40dp"
+            android:layout_height="match_parent"
             android:text="@string/FriWea"
             android:gravity="center_vertical"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:orientation="horizontal"
         android:gravity="center_vertical"
         android:layout_weight="1">
         <TextView
             android:layout_width="50dp"
-            android:layout_height="40dp"
+            android:layout_height="match_parent"
             android:text="@string/Saturday"
             android:gravity="center"/>
         <ImageView
             android:layout_width="100dp"
-            android:layout_height="40dp"
+            android:layout_height="match_parent"
             android:contentDescription="@string/SatWea"
             android:src="@drawable/weather_icon5"/>
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="40dp"
+            android:layout_height="match_parent"
             android:text="@string/SatWea"
             android:gravity="center_vertical"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:orientation="horizontal"
         android:gravity="center_vertical"
         android:layout_weight="1">
         <TextView
             android:layout_width="50dp"
-            android:layout_height="40dp"
+            android:layout_height="match_parent"
             android:text="@string/Sunday"
             android:gravity="center"/>
         <ImageView
             android:layout_width="100dp"
-            android:layout_height="40dp"
+            android:layout_height="match_parent"
             android:contentDescription="@string/SunWea"
             android:src="@drawable/weather_icon2"/>
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="40dp"
+            android:layout_height="match_parent"
             android:text="@string/SunWea"
             android:gravity="center_vertical"/>
     </LinearLayout>

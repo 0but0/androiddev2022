@@ -2,10 +2,13 @@ package vn.edu.usth.usthweather;
 import android.util.Log;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.viewpager2.widget.ViewPager2;
 
 import android.os.Bundle;
 
 public class WeatherActivity extends AppCompatActivity {
+    ViewPagerFragmentAdapter viewPagerFragmentAdapter;
+    ViewPager2 viewPager2;
     private static final String TAG = "MyActivity";
 
     @Override
@@ -13,6 +16,10 @@ public class WeatherActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_weather);
         Log.i(TAG, "Program is created");
+
+        viewPager2 = findViewById(R.id.view_pager);
+        viewPagerFragmentAdapter = new ViewPagerFragmentAdapter(this);
+        viewPager2.setAdapter(viewPagerFragmentAdapter);
 
 //        ForecastFragment forecastFragment = new ForecastFragment();
 //        getSupportFragmentManager().beginTransaction().add(R.id.container, forecastFragment).commit();
