@@ -1,14 +1,19 @@
 package vn.edu.usth.usthweather;
 import android.util.Log;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager2.widget.ViewPager2;
 
 import android.os.Bundle;
 
+import com.google.android.material.tabs.TabLayout;
+import com.google.android.material.tabs.TabLayoutMediator;
+
 public class WeatherActivity extends AppCompatActivity {
-    ViewPagerFragmentAdapter viewPagerFragmentAdapter;
-    ViewPager2 viewPager2;
+    private ViewPagerFragmentAdapter viewPagerFragmentAdapter;
+    private ViewPager2 viewPager2;
+    private TabLayout tabLayout;
     private static final String TAG = "MyActivity";
 
     @Override
@@ -20,6 +25,21 @@ public class WeatherActivity extends AppCompatActivity {
         viewPager2 = findViewById(R.id.view_pager);
         viewPagerFragmentAdapter = new ViewPagerFragmentAdapter(this);
         viewPager2.setAdapter(viewPagerFragmentAdapter);
+
+        tabLayout = findViewById(R.id.tab_layout);
+        new TabLayoutMediator(tabLayout, viewPager2, (tab, position) -> {
+            switch (position){
+                case 0:
+                    tab.setText("HANOI, VIETNAM");
+                    break;
+                case 1:
+                    tab.setText("PARIS, FRANCE");
+                    break;
+                case 2:
+                    tab.setText("TOULOUSE, FRANCE");
+                    break;
+            }
+        }).attach();
 
 //        ForecastFragment forecastFragment = new ForecastFragment();
 //        getSupportFragmentManager().beginTransaction().add(R.id.container, forecastFragment).commit();
