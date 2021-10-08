@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="equal_height_linear">0dp</dimen>
+    <dimen name="width_50">50dp</dimen>
+    <dimen name="width_100">100dp</dimen>
+    <dimen name="total_padding">10dp</dimen>
+</resources>
