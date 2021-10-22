@@ -1,4 +1,5 @@
 package vn.edu.usth.usthweather;
+import android.media.MediaPlayer;
 import android.util.Log;
 
 import androidx.annotation.NonNull;
@@ -9,6 +10,8 @@ import android.os.Bundle;
 
 import com.google.android.material.tabs.TabLayout;
 import com.google.android.material.tabs.TabLayoutMediator;
+
+import java.io.InputStream;
 
 public class WeatherActivity extends AppCompatActivity {
     private ViewPagerFragmentAdapter viewPagerFragmentAdapter;
@@ -40,6 +43,11 @@ public class WeatherActivity extends AppCompatActivity {
                     break;
             }
         }).attach();
+
+        MediaPlayer mp = MediaPlayer.create(getBaseContext(), R.raw.forecastvtv);
+        mp.start();
+
+
 
 //        ForecastFragment forecastFragment = new ForecastFragment();
 //        getSupportFragmentManager().beginTransaction().add(R.id.container, forecastFragment).commit();
