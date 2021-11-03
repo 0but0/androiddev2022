@@ -1,4 +1,5 @@
 package vn.edu.usth.usthweather;
+import android.content.Intent;
 import android.media.MediaPlayer;
 import android.util.Log;
 
@@ -7,6 +8,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager2.widget.ViewPager2;
 
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.widget.Toast;
 
 import com.google.android.material.tabs.TabLayout;
 import com.google.android.material.tabs.TabLayoutMediator;
@@ -52,6 +56,28 @@ public class WeatherActivity extends AppCompatActivity {
 //        ForecastFragment forecastFragment = new ForecastFragment();
 //        getSupportFragmentManager().beginTransaction().add(R.id.container, forecastFragment).commit();
     }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.main_menu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()){
+            case R.id.refresh:
+                Toast.makeText(this, "Refreshing...", Toast.LENGTH_SHORT).show();
+                super.onRestart();
+                return true;
+            case R.id.settings:
+                Intent intent = new Intent(this, PrefActivity.class);
+                startActivity(intent);
+                return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
     @Override
     protected void onStart(){
         super.onStart();

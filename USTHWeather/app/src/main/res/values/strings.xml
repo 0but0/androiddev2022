@@ -30,4 +30,7 @@
     <string name="Tab0">HANOI, VIETNAM</string>
     <string name="Tab1">PARIS, FRANCE</string>
     <string name="Tab2">TOULOUSE, FRANCE</string>
+
+    <string name="Refresh">Refresh</string>
+    <string name="Setting">Settings</string>
 </resources>

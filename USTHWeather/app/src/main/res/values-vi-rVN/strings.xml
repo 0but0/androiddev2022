@@ -20,4 +20,6 @@
     <string name="Tab0">HÀ NỘI, VIỆT NAM</string>
     <string name="Tab1">PARIS, PHÁP</string>
     <string name="Tab2">TOULOUSE, PHÁP</string>
+    <string name="Refresh">Làm mới</string>
+    <string name="Setting">Cài đặt</string>
 </resources>
