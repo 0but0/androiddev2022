@@ -1,6 +1,9 @@
 package vn.edu.usth.usthweather;
 import android.content.Intent;
 import android.media.MediaPlayer;
+import android.os.Handler;
+import android.os.Looper;
+import android.os.Message;
 import android.util.Log;
 
 import androidx.annotation.NonNull;
@@ -69,6 +72,7 @@ public class WeatherActivity extends AppCompatActivity {
             case R.id.refresh:
                 Toast.makeText(this, "Refreshing...", Toast.LENGTH_SHORT).show();
                 super.onRestart();
+                Refresh();
                 return true;
             case R.id.settings:
                 Intent intent = new Intent(this, PrefActivity.class);
@@ -76,6 +80,32 @@ public class WeatherActivity extends AppCompatActivity {
                 return true;
         }
         return super.onOptionsItemSelected(item);
+    }
+    public void Refresh(){
+        final Handler handler = new Handler(Looper.getMainLooper()){
+            @Override
+            public void handleMessage(@NonNull Message msg) {
+                String content = msg.getData().getString("Server Response");
+                Toast toast = Toast.makeText(getApplicationContext(), content, Toast.LENGTH_SHORT);
+                toast.show();
+            }
+        };
+        Thread t = new Thread(()->{
+            try{
+                for (int i=0; i<5; i++){
+                    Thread.sleep(1000);
+                }
+            } catch(InterruptedException e){
+                e.printStackTrace();
+            }
+            Bundle bundle = new Bundle();
+            bundle.putString("Server Response","New content is ready now");
+            Message msg = new Message();
+            msg.setData(bundle);
+            handler.sendMessage(msg);
+        });
+        t.start();
+
     }
 
     @Override
